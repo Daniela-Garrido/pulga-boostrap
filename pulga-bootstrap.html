@@ -16,11 +16,8 @@
 <body>
     <header>
 
-        <div id="bgimg">
+        <div id="bgimg" class="d-none d-sm-block">
             <h1>Pulga Store - Daniela Garrido grupo 2 Reloj </h1>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-                crossorigin="anonymous"></script>
         </div>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -46,68 +43,57 @@
                 </div>
             </div>
         </nav>
-
-        <!-- <nav>
-            <ul class="caja">
-                <a href="#">INICIO</a> |
-                <a href="contacto.html">CONTACTO</a> |
-                <a href="#">PRODUCTOS</a>
-            </ul>
-        </nav> -->
     </header>
 
-    <main>
+    <main class="my-5">
         <div class="container">
             <section>
                 <h2>Sobre Nosotros</h2>
-                <div class="row">
+                <div class="">
                     <p class="bg-body-tertiary">Pulga Store es un emprendimiento creado por un grupo de jóvenes
                         apasionados por ofrecer productos
                         de calidad a nuestros clientes. Nos ubicamos en el corazón de la ciudad y nos especializamos en
                         la
-                        venta de artículos únicos y difíciles de encontrar en el mercado tradicional. </p>
+                        venta de artículos únicos y difíciles de encontrar en el mercado tradicional. 
+                    </p>
                     <br>
                     <p id="parrafo30">Nuestra misión es conectar a nuestros clientes con productos especiales que no
                         encontrarán en
                         otros lugares, ofreciendo un servicio personalizado y atención al detalle.
                     </p>
                 </div>
-
             </section>
-
         </div>
 
         <!-- Botón para video de YouTube -->
         <div class="mt-4" style="text-align: center;">
             <button class="btn bg-warning" data-fancybox data-src="https://www.youtube.com/watch?v=qzDb526q8-A">
-                <i class="bi bi-youtube"></i> El mundo de los hongos
+                <i class="bi bi-youtube"> El mundo de los hongos</i>
             </button>
         </div>
         <br>
-        br
         <section>
-            <div class="row">
-
+            <div class="">
                 <div class="container-fluid col-lg-12" style="text-align: center;">
                     <a data-fancybox="gallery"
                         data-src="https://m-24.com.ar/wp-content/uploads/diversidad-de-hongos-en-un-bosque-2-1024x768.jpg">
                         <img src="https://m-24.com.ar/wp-content/uploads/diversidad-de-hongos-en-un-bosque-2-1024x768.jpg"
-                            width="300" height="200" alt="Tragos preparados" />
+                            width="300" height="200" alt="Tragos preparados" class="mb-1 rounded" />
                     </a>
                     <a data-fancybox="gallery"
                         data-src="https://noticias.imer.mx/wp-content/uploads/2022/01/Hongos-19012022.jpg">
                         <img src="https://noticias.imer.mx/wp-content/uploads/2022/01/Hongos-19012022.jpg" width="300"
-                            height="200" alt="trago con piña" />
+                            height="200" alt="trago con piña" class="mb-1 rounded"/>
                     </a>
                     <a data-fancybox="gallery"
                         data-src="https://cl2.buscafs.com/www.qore.com/public/uploads/images/46444_614x444.jpg">
                         <img src="https://cl2.buscafs.com/www.qore.com/public/uploads/images/46444_614x444.jpg"
-                            width="300" height="200" alt="piscola" />
+                            width="300" height="200" alt="piscola" class="mb-1 rounded"/>
                     </a>
                     <a data-fancybox="gallery"
                         data-src="https://www.upo.es/diario/wp-content/uploads/2022/05/hongos-invest-JMDelgadoBaquerizo-750x563.jpg">
                         <img src="https://www.upo.es/diario/wp-content/uploads/2022/05/hongos-invest-JMDelgadoBaquerizo-750x563.jpg"
-                            width="300" height="200" alt="cocteles" />
+                            width="300" height="200" alt="cocteles" class="mb-1 rounded"/>
                     </a>
                 </div>
 
@@ -146,7 +132,6 @@
         </section>
     </main>
 
-    <br>
     <footer class="container-fluid">
         <div class="row">
             <div id="footer" class="col">
@@ -161,6 +146,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script Bopotstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                crossorigin="anonymous">
+    </script>
     <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
