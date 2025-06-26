@@ -17,7 +17,8 @@
 #bgimg {
     
     color: aliceblue;
-    padding: 35px;
+    padding: 35px 0;
+    width: 100%;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
