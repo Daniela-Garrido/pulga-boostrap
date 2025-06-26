@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Pulga Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-        <script src="jsmedia.js"></script>
-    <link rel="stylesheet" href="style + bootstrap.css">
+    <title >Pulga Store - Venta de productos en línea</title>
+    <!-- Estilos Bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Estilos Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
     <header>
 
         <div id="bgimg" class="d-none d-sm-block">
-            <a href="pulga-bootstrap.html"><h1>Pulga Store</h1></a>
+            <a href="index.html"><h1>Pulga Store</h1></a>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-                crossorigin="anonymous"></script>
+                crossorigin="anonymous">
+            </script>
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">PULGA</a>
+                <a class="navbar-brand" href="index.html">PULGA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,10 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pulga-bootstrap.html">INICIO</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto-bootstrap.html">CONTACTO</a>
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">PRODUCTOS</a>
@@ -45,25 +49,6 @@
     </header>
 
     <main>
-        <!-- <h2>Contáctanos</h2>
-        <form class="caja" style="text-align: center;">
-            <div>
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <br>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-            <button type="submit">Enviar Mensaje</button>
-        </form> -->
-
         <br>
         <form class="container">
             <div class="mb-3">
@@ -83,18 +68,17 @@
         </form>
 
         <section>
-    <div class="clock-container">
-        <div class="clock">
-            <div class="needle hour"></div>
-            <div class="needle minute"></div>
-            <div class="needle second"></div>
-            <div class="center-point"></div>
-        </div>
-        <div class="time"></div>
-        <div class="date"></div>
-    </div>
-</section>
-
+            <div class="clock-container">
+                <div class="clock">
+                    <div class="needle hour"></div>
+                    <div class="needle minute"></div>
+                    <div class="needle second"></div>
+                    <div class="center-point"></div>
+                </div>
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+        </section>
     </main>
 
     <fieldset>
@@ -123,15 +107,32 @@
                 <a href="#" class="text-decoration-none"><i class="bi bi-twitter-x me-3"> </i></a>
                 <a href="#" class="text-decoration-none"><i class="bi bi-instagram me-3"> </i></a>
                 <a href="#" class="text-decoration-none"><i class="bi bi-facebook me-3"> </i></a>
-                <br> <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#mapModal">
+                <br> 
+                <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#mapModal">
                     Encuéntranos en el mapa
                 </button>
-                            
+
+                <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mapModalLabel">Nuestra Ubicación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.8382669859766!2d-71.98014832381898!3d-39.27221277164654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147fc26566dc2b%3A0xc23750f47b48dac6!2sEl%20Mercado%20Fungi!5e1!3m2!1ses!2scl!4v1750911446156!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>        
         </div>
 
     </footer>
-    <script src="pulga.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>
