@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <!-- Mis estilos -->
     <link rel="stylesheet" href="assets/style/style.css">
+
+    <!-- CSS de Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 </head>
 
 <body>
@@ -50,20 +54,20 @@
 
     <main>
         <br>
-        <form class="container">
+        <form id="fomulario" class="container">
+            <div class="mb-3">
+                <label for="exampleInputNombre" class="form-label">Ingresa tu nombre</label>
+                <input type="text" class="form-control" id="idNombre" aria-describedby="nombreHelp">
+            </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Ingresa tu correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Ingresa tu email</div>
+                <input type="email" class="form-control" id="idEmail" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Clave Secreta</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputMensaje" class="form-label">Ingresa tu Mensaje</label>
+                <textarea class="form-control" id="idMensaje"></textarea>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Marca aquí</label>
-            </div>
+            
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
 
@@ -133,6 +137,9 @@
 
     </footer>
     <script src="assets/script/script.js"></script>
+    <script src="assets/script/fomulario.js"></script>
+    <!-- JS de Toastify -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
 </body>
 
 </html>
