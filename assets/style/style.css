@@ -1,4 +1,3 @@
-
 h2 {
     text-align: center;
 }
@@ -147,4 +146,8 @@ footer {
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
+}
+
+body {
+    background-color: #f5f7fa; /* Color suave, puedes cambiarlo si prefieres otro tono */
 }
