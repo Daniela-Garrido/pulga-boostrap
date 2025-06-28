@@ -31,8 +31,9 @@ Para obtener una copia local del proyecto y ejecutarlo en tu máquina:
 
 1.  **Clonar el Repositorio:**
     Abre tu terminal (o Git Bash) y ejecuta el siguiente comando:
-    #### git clone https://github.com/Daniela-Garrido/pulga-boostrap.git
-
+    ```bash
+    git clone https://github.com/Daniela-Garrido/pulga-boostrap.git
+    ```
     Esto creará una carpeta `pulga-boostrap` en tu directorio actual.
 
 
@@ -57,7 +58,7 @@ pulga-boostrap/
 │   └── style/                # Contiene archivos CSS
 │       └── style.css         # Estilos personalizados del proyecto.
 ├── contacto.html             # Página de contacto con formulario.
-├── index.html                # Página principal del sitio web (copia y reemplazo de pulga-bootstrap.html).
+├── index.html                # Página principal del sitio web.
 └── README.md                 # Este documento.
 ```
 ## Flujo de Trabajo con Git (Para Colaboradores)
